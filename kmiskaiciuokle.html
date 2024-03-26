@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMI skaičiuoklė su Bootstrap</title>
+    <!-- Įtraukiame Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="text-center mb-4">
+            <!-- Svorio logotipas -->
+            <img src="neatsipalaiduok.jpg" alt="Svorio logotipas" class="img-fluid">
+        </div>
+        <h1 class="text-center">KMI skaičiuoklė</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="bmiForm">
+                    <div class="form-group">
+                        <label for="weight">Svoris (kg):</label>
+                        <input type="number" class="form-control" id="weight" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Ūgis (cm):</label>
+                        <input type="number" class="form-control" id="height" required>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-block" onclick="calculateBMI()">Skaičiuoti KMI</button>
+                </form>
+                <div id="result" class="mt-4">
+                    <div class="card-body" id="rez">
+                        Įveskite duomenis ir paspauskite skaičiuoti
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Įtraukiame Bootstrap JS ir Popper.js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="app1.js"></script>
+</body>
+
+</html>
